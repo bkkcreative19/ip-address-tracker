@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__head">IP Address Tracker</h1>
+      <form class="header__form">
+        <input
+          class="header__form-input"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        />
+        <img
+          class="header__form-arrow"
+          src="./images/icon-arrow.svg"
+          alt="search-arrow"
+        />
+      </form>
+    </header>
+    <div class="results">
+      <div class="results-ip-address">
+        <span>IP Address</span>
+        <h3></h3>
+      </div>
+      <div class="results-location">
+        <span>Location</span>
+        <h3></h3>
+      </div>
+      <div class="results-timezone">
+        <span>TimeZone</span>
+        <h3></h3>
+      </div>
+      <div class="results-isp">
+        <span>ISP</span>
+        <h3></h3>
+      </div>
+    </div>
+    <div class="map"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
